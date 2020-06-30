@@ -40,6 +40,9 @@ body{
   html {
     font-size: 40%;
   }
+  body{
+    padding: 1rem;
+  }
   .main-container{
     width: 100%;
     text-align: center;
