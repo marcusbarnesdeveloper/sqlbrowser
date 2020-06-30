@@ -3,7 +3,7 @@ import React from 'react';
 const PastQueriesComponent = (props) => (
   <div className='past-queries'>
     <div style={{fontSize:'2rem'}}>Past Queries</div>
-    {props.pastQueries.map(q => (
+    {props.pastQueries.length > 0 && props.pastQueries.map(q => (
       <div className='queryResult'>{q}</div>
     ))}
   </div>

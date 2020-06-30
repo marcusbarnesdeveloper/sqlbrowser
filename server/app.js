@@ -46,6 +46,7 @@ app.post('/api/savequery', async(req, res) => {
 app.get('/api/getquery', async(req, res) => {
   try {
     const getQuery = await Mongodb.getUserQuery(req.query.id);
+    console.log(getQuery);
     res.status(200);
     res.send(getQuery);
     res.end();

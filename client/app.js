@@ -42,7 +42,7 @@ class App extends React.Component{
   async signUserUp() {
     try {
       const res = await Request.post('signup',{username: this.state.username, password: this.state.username});
-      this.setState({isLoggedIn: true});
+      this.setState({username: '',password: ''});
     } catch (error) {
       this.setState({isLoggedIn: false, loginError: true});
     }
@@ -54,7 +54,6 @@ class App extends React.Component{
     try {
       const res = await Request.post('login',{username: this.state.username, password: this.state.password});
       const getquery = await this.getUserQuery(res.data);
-
       this.setState({isLoggedIn: true, id: res.data,pastQueries:getquery.data,loginError: true});
     } catch (error) {
       this.setState({isLoggedIn: false, loginError: true});
