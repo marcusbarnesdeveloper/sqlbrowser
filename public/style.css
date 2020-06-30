@@ -1,0 +1,50 @@
+html{
+  font-size: 62.5%;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.main-container{
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.queryResult{
+  margin: .5rem 0;
+  font-weight: bold;
+  font-size: 2.2rem;
+  text-align: left;
+}
+
+.past-queries {
+  border: .1rem solid black;
+  padding: 2rem;
+}
+
+.query-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.login-input {
+  width: 30%;
+  padding: .5rem 0;
+  margin: 1rem 1rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+  .main-container{
+    width: 100%;
+    text-align: center;
+  }
+  .query-box{
+    display: block;
+  }
+}
