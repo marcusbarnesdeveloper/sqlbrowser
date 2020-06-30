@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-mongoose.connect(`mongodb+srv://${process.env.USERNAME}:${process.env.password}@${process.env.db}.fan4l.mongodb.net/sql?retryWrites=true&w=majority`,{useNewUrlParser: true});
+mongoose.connect(`mongodb+srv://${process.env.USERNAME}:${process.env.PSWD}@${process.env.DB}.fan4l.mongodb.net/sql?retryWrites=true&w=majority`,{useNewUrlParser: true});
 
 const db = mongoose.connection;
 
